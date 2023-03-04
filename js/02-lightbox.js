@@ -12,14 +12,9 @@ function createGallaryList() {
     }).join("");
 }
 
-gallaryContainer.addEventListener("click", onImageClick);
 
-function onImageClick(event) {
-    event.preventDefault();
-    var lightbox = new SimpleLightbox('.gallery__item', {
-        captionsData: 'alt',
-        captionDelay: 250,});
-}
-
+const lightbox = new SimpleLightbox('.gallery__item', {
+    captionsData: 'alt',
+    captionDelay: 250,});
 
 console.log(galleryItems);
